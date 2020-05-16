@@ -1,0 +1,169 @@
+body{
+   background: #EDEDED;
+   font-family: 'Raleway', sans-serif;
+}
+header{
+    margin-top: 30px;
+}
+header .nav{
+    min-height: 80px;
+    overflow: hidden;
+    background:white;
+}
+/*------Logo -----*/
+header .logo h2, 
+header .logo span, 
+header .logo p{
+    font-size: 20px;
+    display: inline-block;
+    margin: 0;
+}
+header .logo .icono {color:#8D8DAA}
+header .logo p{color: #777777;}
+
+/*----Menú-----*/
+header .menu{
+    padding: 0;
+}
+header .menu a{
+   display: block;
+   padding: 0 30px;
+   text-decoration: none;
+   color:white;
+}
+header .menu a div span{
+    font-weight: 400;
+}
+header .menu .c-1{background: #A66FA6;}
+header .menu .c-2{background: #8A458A;}
+header .menu .c-3{background: #530E53;}
+
+  header .menu .c-1:hover {background: #decfcf;}
+  header .menu .c-2:hover {background: #e289db;}
+  header .menu .c-3:hover {background: #756477;}
+/*---Slider----*/
+.slider{
+    margin-bottom: 40px;
+}
+.slider .col{
+    padding: 0;
+}
+/*---Portafolio---*/
+.portafolio{
+    background: white;
+    border-top: 5px solid #A66FA6;
+    padding: 0 20px;
+}
+.portafolio .titulo{
+   padding: 40px 0;
+   text-align: center;
+   color: #A66FA6;
+   font-size: 'raleway','san-serif';
+   font-weight: 300;
+}
+.portafolio .galeria .contenedor-imagen{
+    margin-bottom: 40px;
+    max-height: 250px;
+    overflow: hidden;
+}
+.portafolio .galeria .contenedor-imagen a{
+   background: #e289db;
+   display: inline-block;
+}
+.portafolio .galeria .contenedor-imagen:hover img{
+  opacity: .3;
+}
+.portafolio .modal-dialog{
+    margin: 0px auto;
+    height: 100%;
+    max-width: 1000px;
+}
+.portafolio .modal-content{
+    width: auto;
+}
+/*****Acerca de****/
+.acerca-de{
+    padding: 30px;
+    margin-bottom: 40px;
+}
+.acerca-de .foto{
+    text-align: center;
+}
+.acerca-de .foto img{
+ margin-bottom: 30px;
+}
+.acerca-de .foto .nombre{
+    color: #545454;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.acerca-de .info .titulo{
+    color: #e289db;
+    font-family: 'raleway','san-serif';
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.acerca-de .info .titulo2,
+.acerca-de .info .titulo3{
+   color: #e289db;
+   font-family: 'raleway','san-serif';
+   font-weight: 300;
+   font-size: 30px;
+   margin-bottom: 30px;
+   text-align: center;
+}
+
+.acerca-de .info .label{
+    font-size: 18px;
+    font-weight: 600;
+    color: #e289db;
+    margin-bottom: 10px;
+}
+.acerca-de .info .progress{
+    background:#A66FA6;
+    border-radius: 1;
+    margin-bottom: 15px;
+    height: 25px;
+}
+.acerca-de .info .progress .progress-bar{
+    background: #8A458A;
+    line-height: 25px;
+    text-align: left;
+    padding-left: 20px;
+}
+/*---Mediaqueries---*/
+/* Dispositivo lg */
+@media screen and (max-width:991px){
+    .logo{
+        height: 76px;
+    }
+    .menu{
+        min-height: 76px;
+    }
+    .menu a{
+      width: 100%;
+    }
+    .menu a div{
+        width: 100%;
+    }
+}
+
+/* Dispositivo md */
+@media screen and (max-width:767px){
+    
+}
+
+/* Dispositivo sm */
+@media screen and (max-width:575px){
+    header{
+        margin-top: 0;
+    }
+    header .logo h2, 
+    header .logo p{
+        font-size: 15px;
+    }
+}
