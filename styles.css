@@ -30,10 +30,12 @@ h1 {
   line-height: 50px;
 }
 
-#inicio p {
+#inicio > p {
   margin: 25px 0;
 }
-
+.lista-redes {
+  margin: 25px 0;
+}
 #inicio ul li {
   display: inline-block;
 }
@@ -157,6 +159,42 @@ h1 {
 /*Media Mobile*/
 @media (max-width: 360px) {
   header {
-    padding: 0;
+    font-size: 0.8rem;
+    padding: 30px;
+  }
+  header h1 {
+    margin: 0;
+    line-height: 19px;
+  }
+  header img {
+    width: 100%;
+  }
+  #inicio {
+    padding: 30px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .foto-perfil {
+    width: 37%;
+  }
+  #inicio h1 {
+    font-size: 1rem;
+    line-height: 26px;
+  }
+  .inicio-redes p {
+    font-size: 0.7rem;
+  }
+  .lista-redes {
+    margin: 25px 0;
+    display: flex;
+    font-size: 0.6rem;
+  }
+  #inicio ul li {
+    display: flex;
+    justify-content: center;
+  }
+  #inicio ul li a > img {
+    margin-left: 3px;
+    width: 12%;
   }
 }
