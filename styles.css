@@ -181,7 +181,7 @@ h1 {
     padding: 30px;
   }
 
-  header h1 {
+  .section-header h1 {
     margin: 0;
     line-height: 19px;
   }
@@ -225,5 +225,8 @@ h1 {
   }
   .elementos-interior > img {
     top: 64%;
+  }
+  .elementos-interior > img {
+    width: 18%;
   }
 }
