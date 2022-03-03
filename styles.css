@@ -107,7 +107,7 @@ h1 {
 /*Sección skills y hobbies*/
 #skills,
 #hobbies {
-  padding: 64px;
+  padding: 30px;
 }
 #skills h2,
 #hobbies h2 {
@@ -116,12 +116,16 @@ h1 {
 .lista-skills-hobbies {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1080px;
+  padding: 30px 0 30px 0;
+  text-align: center;
 }
 
-.lista-skills-hobbies li {
+.elementos-interior {
   padding: 2%;
   width: 15%;
-  height: 12vh;
+  height: 18vh;
   background-color: white;
   position: relative;
   display: flex;
@@ -129,17 +133,19 @@ h1 {
   box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 8%);
 }
 
-.elementos-interior {
-  position: absolute;
-  top: 50%;
-}
-
 .elementos-interior > img {
-  margin-bottom: 10%;
+  width: 15%;
+  position: absolute;
+  top: 55%;
+  left: 10%;
 }
 
 .elementos-interior > p {
   font-weight: bold;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  margin-top: 14px;
 }
 
 /*Media tablet*/
@@ -157,8 +163,14 @@ h1 {
   #inicio {
     padding: 64px;
   }
-  .lista-skills-hobbies li {
-    height: 9vh;
+  .lista-skills-hobbies {
+    width: auto;
+  }
+  .elementos-interior {
+    height: 10vh;
+  }
+  .elementos-interior > p {
+    font-size: 15px;
   }
 }
 
@@ -206,5 +218,12 @@ h1 {
   }
   #sobre-mi {
     height: auto;
+  }
+  .elementos-interior {
+    width: 30%;
+    margin-bottom: 10%;
+  }
+  .elementos-interior > img {
+    top: 64%;
   }
 }
