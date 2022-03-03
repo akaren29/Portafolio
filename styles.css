@@ -2,7 +2,13 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 20px;
 }
-header {
+header,
+.section-inicio,
+.section-skills,
+.section-hobbies {
+  background: #f5f5f5;
+}
+.section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,6 +21,16 @@ header {
   align-items: center;
   font-weight: bold;
 }
+
+/*Section inicio*/
+h1 {
+  margin: 15px 0;
+  line-height: 50px;
+}
+
+#inicio > p {
+  margin: 25px 0;
+}
 .nav-inicio li {
   display: inline;
   margin-right: 25px;
@@ -24,15 +40,6 @@ header {
   text-decoration: none;
   color: black;
 }
-
-h1 {
-  margin: 15px 0;
-  line-height: 50px;
-}
-
-#inicio > p {
-  margin: 25px 0;
-}
 .lista-redes {
   margin: 25px 0;
 }
@@ -40,6 +47,10 @@ h1 {
   display: inline-block;
 }
 
+#inicio ul li::after {
+  content: "🡥";
+  margin-left: 10px;
+}
 #inicio ul li:first-child {
   margin-left: 0;
 }
@@ -50,9 +61,6 @@ h1 {
   text-decoration: none;
   color: black;
 }
-#inicio ul li a > img {
-  margin-left: 7px;
-}
 .foto-perfil {
   width: 25%;
 }
@@ -60,10 +68,6 @@ h1 {
 #inicio {
   background: #f5f5f5;
   padding: 24px;
-}
-
-.background-plata {
-  background: #f5f5f5;
 }
 
 /*tamaño de layout*/
@@ -87,11 +91,11 @@ h1 {
   font-weight: bold;
   font-size: 32px;
   line-height: 38px;
-  margin-bottom: 1%;
+  margin: 2% 0;
 }
 
 /*Sección sobre mi*/
-.background-sobremi {
+.section-sobremi {
   background-color: #eaf2fd;
 }
 
@@ -110,17 +114,19 @@ h1 {
   text-align: center;
 }
 .lista-skills-hobbies {
-  display: inline-block;
   display: flex;
   justify-content: space-around;
 }
+
 .lista-skills-hobbies li {
   padding: 2%;
   width: 15%;
-  height: 15vh;
+  height: 12vh;
   background-color: white;
   position: relative;
   display: flex;
+  border-radius: 16px;
+  box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 8%);
 }
 
 .elementos-interior {
@@ -138,7 +144,7 @@ h1 {
 
 /*Media tablet*/
 @media (max-width: 768px) {
-  header {
+  .section-header {
     width: auto;
     padding: 30px;
   }
@@ -197,5 +203,8 @@ h1 {
   #inicio ul li a > img {
     margin-left: 3px;
     width: 12%;
+  }
+  #sobre-mi {
+    height: auto;
   }
 }
