@@ -248,7 +248,7 @@ h1 {
 }
 
 /*Media Mobile*/
-@media (max-width: 479px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   header {
     font-size: 0.8rem;
     padding: 30px;
