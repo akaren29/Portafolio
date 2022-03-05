@@ -5,7 +5,8 @@ body {
 header,
 .section-inicio,
 .section-skills,
-.section-hobbies {
+.section-hobbies,
+.section-proyectos {
   background: #f5f5f5;
 }
 .section-header {
@@ -107,7 +108,9 @@ h1 {
 
 /*Sección skills y hobbies*/
 #skills,
-#hobbies {
+#hobbies,
+#formacion,
+#proyectos {
   padding: 30px;
 }
 #skills h2,
@@ -150,9 +153,6 @@ h1 {
 }
 
 /*Seccion formacion*/
-#formacion {
-  padding: 30px;
-}
 #formacion h2 {
   text-align: center;
 }
@@ -207,6 +207,58 @@ h1 {
   font-size: 0.9rem;
   margin-top: 2%;
 }
+
+/*Section proyectos*/
+#proyectos h2 {
+  text-align: center;
+}
+.items-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+.proyecto {
+  width: 60%;
+}
+.proyecto a > img {
+  width: 100%;
+}
+.proyecto-informacion {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2%;
+}
+.proyecto-informacion h4 {
+  font-weight: bold;
+}
+.proyecto-informacion p {
+  margin: 2% 0;
+}
+.proyecto-informacion button {
+  display: inline;
+  padding: 2%;
+  width: auto;
+  height: 6vh;
+  color: white;
+  background-color: #2a7ae4;
+  border: none;
+  cursor: pointer;
+}
+.proyecto-informacion a {
+  text-decoration: none;
+}
+.proyecto-informacion #repositorio {
+  margin-right: 1%;
+  color: #2a7ae4;
+  border: 1px solid #2a7ae4;
+  background-color: #f5f5f5;
+}
+
+.proyecto-2 {
+  flex-direction: row-reverse;
+}
 /*Media tablet*/
 @media (max-width: 768px) {
   .section-header {
@@ -244,6 +296,25 @@ h1 {
   .leyendas p {
     margin-top: 3%;
     font-size: 0.7rem;
+  }
+  .proyecto {
+    width: 100%;
+  }
+  .proyecto-informacion {
+    margin: 2% 0;
+  }
+  .buttons-proyecto {
+    margin-top: 2%;
+  }
+  .buttons-proyecto button {
+    height: 4vh;
+    width: 40%;
+  }
+  .buttons-proyecto #repositorio {
+    margin-right: 3%;
+  }
+  .proyecto-informacion-2 {
+    margin-right: 60%;
   }
 }
 
@@ -314,5 +385,11 @@ h1 {
   .leyendas h4,
   .leyendas p {
     font-size: 0.7rem;
+  }
+  .proyecto-informacion {
+    width: 90%;
+  }
+  .buttons-proyecto button {
+    width: 70%;
   }
 }
