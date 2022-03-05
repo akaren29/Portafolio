@@ -407,7 +407,14 @@ h1 {
   .proyecto-informacion {
     width: 90%;
   }
+  .proyecto-informacion-2 {
+    margin-right: 10%;
+  }
+  .buttons-proyecto {
+    width: 100%;
+  }
   .buttons-proyecto button {
-    width: 70%;
+    width: auto;
+    height: 3vh;
   }
 }
