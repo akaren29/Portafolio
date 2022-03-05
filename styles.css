@@ -2,7 +2,17 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 20px;
 }
+
+/*tamaño de layout*/
+.alineacion {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 24px;
+}
+/******************/
+
 header,
+#inicio,
 .section-inicio,
 .section-skills,
 .section-hobbies,
@@ -21,6 +31,7 @@ header,
   display: flex;
   align-items: center;
   font-weight: bold;
+  margin-left: -2%;
 }
 
 /*Section inicio*/
@@ -67,20 +78,10 @@ h1 {
 }
 
 #inicio {
-  background: #f5f5f5;
-  padding: 24px;
-}
-
-/*tamaño de layout*/
-.alineacion {
-  width: 1080px;
-  margin: 0 auto;
-}
-
-#inicio {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 45px;
 }
 
 #inicio h1 {
@@ -92,7 +93,7 @@ h1 {
   font-weight: bold;
   font-size: 32px;
   line-height: 38px;
-  margin: 2% 0;
+  margin: 1% 0;
 }
 
 /*Sección sobre mi*/
@@ -111,7 +112,7 @@ h1 {
 #hobbies,
 #formacion,
 #proyectos {
-  padding: 30px;
+  padding: 19px 64px;
 }
 #skills h2,
 #hobbies h2 {
@@ -119,7 +120,7 @@ h1 {
 }
 .lista-skills-hobbies {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 1080px;
   padding: 30px 0 30px 0;
@@ -153,12 +154,16 @@ h1 {
 }
 
 /*Seccion formacion*/
+#formacion {
+  height: auto;
+  padding: 64px 64px;
+}
 #formacion h2 {
   text-align: center;
 }
 .lista-formaciones {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 1080px;
   padding: 30px 0 0 0;
@@ -190,13 +195,13 @@ h1 {
 }
 .leyendas-formaciones {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 1080px;
 }
 .leyendas {
   width: 15%;
-  height: 18vh;
+  height: auto;
   margin-top: 1%;
 }
 .leyendas h4 {
@@ -263,7 +268,7 @@ h1 {
 @media (max-width: 768px) {
   .section-header {
     width: auto;
-    padding: 30px;
+    padding: 60px;
   }
   .nav-inicio-li a {
     display: none;
@@ -287,7 +292,7 @@ h1 {
     font-size: 15px;
   }
   .leyendas {
-    height: 6vh;
+    height: auto;
   }
   .leyendas h4 {
     margin-top: 2%;
@@ -320,9 +325,12 @@ h1 {
 
 /*Media Mobile*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .section-header {
+    padding: 0;
+  }
   header {
     font-size: 0.8rem;
-    padding: 30px;
+    padding: 18px;
   }
 
   .section-header h1 {
@@ -332,7 +340,9 @@ h1 {
   header img {
     width: 100%;
   }
+
   #inicio {
+    padding: 28px;
     flex-direction: column-reverse;
     align-items: flex-start;
   }
@@ -361,6 +371,14 @@ h1 {
   }
   #sobre-mi {
     height: auto;
+    padding: 28px;
+  }
+
+  #skills,
+  #hobbies,
+  #formacion,
+  #proyectos {
+    padding: 28px;
   }
   .elementos-interior {
     width: 30%;
