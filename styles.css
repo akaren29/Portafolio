@@ -431,14 +431,16 @@ footer {
     font-size: 30px;
   }
   .elementos-interior > p {
-    margin-top: 2%;
+    margin-top: 4%;
   }
   .lista-skills-hobbies {
     justify-content: space-between;
   }
-
+  .lista-formaciones {
+    justify-content: center;
+  }
   .contenedor-formaciones {
-    width: 100%;
+    width: 90%;
     margin-top: 7%;
   }
 
