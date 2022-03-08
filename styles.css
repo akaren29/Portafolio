@@ -125,7 +125,6 @@ h1 {
   flex-wrap: wrap;
   width: 1080px;
   padding: 30px 0 30px 0;
-  text-align: center;
 }
 
 .elementos-interior {
@@ -139,10 +138,11 @@ h1 {
   box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 8%);
 }
 
-.elementos-interior > img {
-  width: 15%;
+.elementos-interior > i {
+  font-size: 40px;
+  color: #2a7ae4;
   position: absolute;
-  top: 55%;
+  top: 45%;
   left: 10%;
 }
 
@@ -168,15 +168,16 @@ h1 {
   flex-wrap: wrap;
   width: 1080px;
   padding: 30px 0 0 0;
-  text-align: center;
+}
+.contenedor-formaciones {
+  width: 25%;
+  height: auto;
 }
 .items-formacion {
-  padding: 2%;
-  width: 15%;
-  height: 18vh;
-  background-color: white;
-  position: relative;
   display: flex;
+  width: 100%;
+  height: 25vh;
+  background-color: white;
   border-radius: 16px;
   box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 8%);
 }
@@ -186,24 +187,8 @@ h1 {
   object-fit: contain;
   top: 50%;
 }
-.items-formacion > h4 {
-  position: absolute;
-  bottom: -11%;
-}
-.items-formacion > p {
-  position: absolute;
-  bottom: -17%;
-}
-.leyendas-formaciones {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 1080px;
-}
 .leyendas {
-  width: 15%;
-  height: auto;
-  margin-top: 1%;
+  margin-left: 3%;
 }
 .leyendas h4 {
   font-weight: 900;
@@ -439,24 +424,24 @@ footer {
     padding: 28px;
   }
   .elementos-interior {
-    width: 30%;
+    width: 43%;
     margin-bottom: 10%;
   }
-  .elementos-interior > img {
-    top: 64%;
+  .elementos-interior > i {
+    font-size: 30px;
   }
-  .elementos-interior > img {
-    width: 18%;
+  .elementos-interior > p {
+    margin-top: 2%;
   }
   .lista-skills-hobbies {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
-  .items-formacion {
-    flex-wrap: wrap;
-    margin-top: 4%;
-    width: 25%;
-    height: 8vh;
+
+  .contenedor-formaciones {
+    width: 100%;
+    margin-top: 7%;
   }
+
   .leyendas {
     margin-right: 8%;
     margin-top: 3%;
