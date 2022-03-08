@@ -27,6 +27,7 @@ header,
   background: #f5f5f5;
   width: 1080px;
   margin: 0 auto;
+  padding: 2% 0;
 }
 .titulo {
   display: flex;
@@ -36,13 +37,15 @@ header,
 }
 
 /*Section inicio*/
-h1 {
+.titulo-inicio {
   margin: 15px 0;
   line-height: 50px;
+  font-size: 2rem;
 }
 
 #inicio > p {
   margin: 25px 0;
+  font-size: 22px;
 }
 .nav-inicio li {
   display: inline;
@@ -60,10 +63,11 @@ h1 {
   display: inline-block;
 }
 
-#inicio ul li::after {
+#inicio ul li i {
   content: "🡥";
   margin-left: 10px;
 }
+
 #inicio ul li:first-child {
   margin-left: 0;
 }
@@ -113,7 +117,8 @@ h1 {
 #skills,
 #hobbies,
 #formacion,
-#proyectos {
+#proyectos,
+#contacto {
   padding: 19px 64px;
 }
 #skills h2,
@@ -210,7 +215,7 @@ h1 {
   padding: 1%;
 }
 .proyecto {
-  width: 60%;
+  width: 56%;
 }
 .proyecto a > img {
   width: 100%;
@@ -300,7 +305,7 @@ footer {
 @media (max-width: 768px) {
   .section-header {
     width: auto;
-    padding: 60px;
+    padding: 48px;
   }
   .nav-inicio-li a {
     display: none;
@@ -311,6 +316,10 @@ footer {
   #inicio {
     padding: 64px;
   }
+  #inicio .titulo-inicio {
+    font-size: 22px;
+  }
+
   .lista-skills-hobbies,
   .lista-formaciones,
   .leyendas-formaciones {
@@ -334,8 +343,12 @@ footer {
     margin-top: 3%;
     font-size: 0.7rem;
   }
+
   .proyecto {
     width: 100%;
+  }
+  .items-proyectos {
+    margin-top: 7%;
   }
   .proyecto-informacion {
     margin: 2% 0;
@@ -421,8 +434,9 @@ footer {
   #skills,
   #hobbies,
   #formacion,
-  #proyectos {
-    padding: 28px;
+  #proyectos,
+  #contacto {
+    padding: 24px;
   }
   .elementos-interior {
     width: 43%;
