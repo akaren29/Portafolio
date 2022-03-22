@@ -1,0 +1,22 @@
+.section-sobremi {
+  background-color: #eaf2fd;
+}
+
+#sobre-mi {
+  height: 300px;
+}
+
+.titulo-sobre__mi {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 38px;
+  margin: 1% 0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .lista-redes {
+    margin: 25px 0;
+    display: flex;
+    font-size: 0.7rem;
+  }
+}

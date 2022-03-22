@@ -1,0 +1,41 @@
+.contacto-info {
+  width: 60%;
+  padding: 0 2%;
+}
+form {
+  margin-top: 3%;
+}
+.form-inputs {
+  background-color: #ffffff;
+  margin-bottom: 2%;
+  padding: 1%;
+}
+form label {
+  display: block;
+}
+form input {
+  border: none;
+  width: 100%;
+}
+.form-inputs textarea {
+  width: 99%;
+  border: none;
+}
+
+.btn-enviar {
+  width: auto;
+  height: 5vh;
+  background-color: #2a7ae4;
+  color: white;
+  margin-top: 2%;
+}
+
+@media (max-width: 768px) {
+  .contacto-info {
+    width: 100%;
+  }
+
+  .btn-enviar {
+    height: 3vh;
+  }
+}

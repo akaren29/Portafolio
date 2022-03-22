@@ -1,0 +1,28 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+/*tamaño de layout*/
+
+.alineacion {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/*Media tablet*/
+
+@media (max-width: 768px) {
+  .alineacion {
+    width: auto;
+    padding: 30px;
+  }
+}
+
+/*Media Mobile*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .alineacion {
+    padding: 15px;
+  }
+}

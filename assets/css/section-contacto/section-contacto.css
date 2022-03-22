@@ -1,0 +1,22 @@
+.section-contacto {
+  background-color: #eaf2fd;
+}
+
+#contacto {
+  display: flex;
+}
+
+.contacto-imagen {
+  width: 40%;
+}
+
+.contacto-imagen img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .contacto-imagen {
+    display: none;
+  }
+}

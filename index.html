@@ -5,8 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Karen Jasso</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link href="./assets/css/reset.css" rel="stylesheet" />
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link href="./assets/css/header/header.css" rel="stylesheet" />
+    <link href="./assets/css/header/header-nav.css" rel="stylesheet" />
+    <link href="./assets/css/section-inicio/section-inicio.css" rel="stylesheet" />
+    <link href="./assets/css/section-inicio/redesSociales.css" rel="stylesheet" />
+    <link href="./assets/css/section-inicio/inicio-fotoPerfil.css" rel="stylesheet" />
+    <link href="./assets/css/section-sobreMi/sobremi.css" rel="stylesheet" />
+    <link href="./assets/css/section-skills/section-skills.css" rel="stylesheet" />
+    <link href="./assets/css/section-skills/lista-skills.css" rel="stylesheet" />
+    <link href="./assets/css/section-hobbies/section-hobbies.css" rel="stylesheet" />
+    <link href="./assets/css/section-hobbies/lista-hobbies.css" rel="stylesheet" />
+    <link href="./assets/css/section-formacion/section-formacion.css" rel="stylesheet" />
+    <link href="./assets/css/section-formacion/lista-formaciones.css" rel="stylesheet" />
+    <link href="./assets/css/section-proyectos/section-proyectos.css" rel="stylesheet" />
+    <link href="./assets/css/section-proyectos/lista-proyectos.css" rel="stylesheet" />
+    <link href="./assets/css/section-contacto/section-contacto.css" rel="stylesheet" />
+    <link href="./assets/css/section-contacto/contacto-formulario.css" rel="stylesheet" />
+    <link href="./assets/css/footer/footer.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -14,16 +32,22 @@
 </head>
 <body>
     <header>
-      <div class="section-header">
-        <h1 class="titulo"><img id="logo" src="imagenes/logo.png" alt="logo-pagina">Karen Jasso</h1>
-        <nav>
-            <ul class="nav-inicio">
+      <div class="section-header alineacion">
+        <div class="grupo-logo">
+          <div class="imagen-logo"></div>
+          <h1>Karen Jasso</h1>
+        </div>
+        <button class="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav-inicio">
+            <ul class="ul-inicio">
                 <li class="nav-inicio-li"><a href="#sobre-mi">Sobre mi</a></li>
                 <li class="nav-inicio-li"><a href="#skills">Skills</a></li>
                 <li class="nav-inicio-li"><a href="#hobbies">Hobbies</a></li>
                 <li class="nav-inicio-li"><a href="#formacion">Formación</a></li>
                 <li class="nav-inicio-li"><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>     
             </ul>
         </nav>
       </div>
@@ -31,7 +55,6 @@
     
 
     <main>
-        
         <section class="section-inicio">
               <div id="inicio" class="alineacion">
                <div class="inicio-redes">
@@ -51,14 +74,14 @@
                     </li>
                   </ul>
                </div>
-               <img class="foto-perfil" src="imagenes/foto-perfil.png" alt="foto-perfil">
+               <div class="foto-perfil"></div>
               </div>
         </section>
         
 
         <section class="section-sobremi">
           <div id="sobre-mi" class="alineacion">
-              <h2 class="titulo-secundario">Sobre mi</h2>
+              <h2 class="titulo-sobre__mi">Sobre mi</h2>
               <p>He visto crecer la era digital y como ha evolucionado, me encantaban los videojuegos y
               mi favorito era crash bandicoot. Me apasiona la tecnologia, me gusta resolver problemas
               y más aún que los lenguajes de programación esten a nuestro alcance para ayudarnos a crear 
@@ -70,21 +93,21 @@
         
           <section class="section-skills">
             <div id="skills" class="alineacion">
-              <h2 class="titulo-secundario">Skills</h2>
-              <div class="lista-skills-hobbies">
-                    <div class="elementos-interior">
+              <h2 class="titulo-skills">Skills</h2>
+              <div class="lista-skills">
+                    <div class="elementos-skills">
                       <i class="fa-brands fa-html5"></i>
                       <p>Html5</p> 
                     </div>
-                    <div class="elementos-interior">
+                    <div class="elementos-skills">
                       <i class="fa-brands fa-js-square"></i>
                       <p>Javascript</p> 
                     </div>
-                    <div class="elementos-interior">
+                    <div class="elementos-skills">
                       <i class="fa-brands fa-css3-alt"></i>
                       <p>CSS</p> 
                     </div>
-                    <div class="elementos-interior">
+                    <div class="elementos-skills">
                       <i class="fa-brands fa-git-alt"></i>
                       <p>Git</p> 
                     </div>
@@ -95,21 +118,21 @@
 
         <section class="section-hobbies">
           <div id="hobbies" class="alineacion">
-              <h2 class="titulo-secundario">Hobbies</h2>
-              <div class="lista-skills-hobbies">
-                    <div class="elementos-interior"> 
+              <h2 class="titulo-hobbies">Hobbies</h2>
+              <div class="lista-hobbies">
+                    <div class="elementos-hobbies"> 
                       <i class="fa-solid fa-book-open-reader"></i>
                       <p>Leer</p> 
                     </div> 
-                    <div class="elementos-interior"> 
+                    <div class="elementos-hobbies"> 
                       <i class="fa-solid fa-headphones"></i>
                       <p>Escuchar música</p> 
                     </div> 
-                    <div class="elementos-interior"> 
+                    <div class="elementos-hobbies"> 
                       <i class="fa-solid fa-person-walking"></i>
                       <p>Caminata</p> 
                     </div> 
-                    <div class="elementos-interior"> 
+                    <div class="elementos-hobbies"> 
                       <i class="fa-solid fa-tv"></i>
                       <p>Ver series</p> 
                   </div> 
@@ -119,33 +142,33 @@
 
         <section class="section-formacion">
             <div id="formacion" class="alineacion">
-              <h2 class="titulo-secundario">Formación académica</h2>
+              <h2 class="titulo-formacion">Formación académica</h2>
                 <div class="lista-formaciones">
                   <div class="contenedor-formaciones">
-                    <div class="items-formacion">
-                      <img src="imagenes/formaciones/umb.jpg" alt="escuela">
+                    <div class="items-formaciones">
+                      <img src="./assets/img/formaciones/umb.jpg" alt="escuela">
                     </div>
-                    <div class="leyendas">
+                    <div class="descripcion-formaciones">
                       <h4>Lic. Informática</h4>
                       <p>2014-UMB</p>
                     </div>
                   </div>
                   <div class="contenedor-formaciones">
-                    <div class="items-formacion">
-                      <img src="imagenes/formaciones/udemy.png" alt="curso">
+                    <div class="items-formaciones">
+                      <img src="./assets/img/formaciones/udemy.png" alt="curso">
                     </div>
-                    <div class="leyendas">
+                    <div class="descripcion-formaciones">
                       <h4>Curso Javascript</h4>
                       <p>2021-Udemy</p>
                     </div>
                   </div>
                   <div class="contenedor-formaciones">
-                    <div class="items-formacion">
-                      <img src="imagenes/formaciones/alura.png" alt="alura">
+                    <div class="items-formaciones">
+                      <img src="./assets/img/formaciones/alura.png" alt="alura">
                     </div> 
-                    <div class="leyendas">
+                    <div class="descripcion-formaciones">
                       <h4>Cursando </h4>
-                      <p>2022-Alura</p>
+                      <p>2022-Oracle + Alura Latam</p>
                     </div> 
                   </div>
                 </div>
@@ -153,8 +176,8 @@
 
       <section class="section-proyectos"> 
         <div id="proyectos" class="alineacion">
-          <h2 class="titulo-secundario">Experiencia Profesional</h2>
-          <div class="items-proyectos">
+          <h2 class="titulo-proyectos">Experiencia Profesional</h2>
+          <div class="lista-proyectos">
             <div class="proyecto">
               <a href="https://gyazo.com/aa26235454ebdd24e34de3d1b3062189"><img src="https://i.gyazo.com/aa26235454ebdd24e34de3d1b3062189.gif" alt="Image from Gyazo"/></a>
             </div>
@@ -167,7 +190,7 @@
               </div>
             </div>
           </div>
-          <div class="items-proyectos proyecto-2">
+          <div class="lista-proyectos proyecto-2">
             <div class="proyecto">
               <a href="https://gyazo.com/a09843b9b20542a6fd3fcd8ba8fe5a71"><img src="https://i.gyazo.com/a09843b9b20542a6fd3fcd8ba8fe5a71.gif" alt="Image from Gyazo"/></a>
             </div>
@@ -186,7 +209,7 @@
       <section class="section-contacto"> 
         <div id="contacto" class="alineacion">
           <div class="contacto-imagen">
-            <img src="imagenes/contacto.png" alt="imagen-contacto">
+            <img src="./assets/img/contacto.png" alt="imagen-contacto">
           </div>
           <div class="contacto-info">
             <h2 class="titulo-secundario">Contacto</h2>
@@ -224,5 +247,6 @@
         <p>Desarrollado por Karen Jasso</p>
         <p>2022</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

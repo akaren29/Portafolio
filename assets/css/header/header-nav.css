@@ -1,0 +1,42 @@
+.nav-inicio {
+  display: flex;
+}
+.nav-toggle {
+  background: none;
+  border: none;
+  font-size: 25px;
+  display: none;
+}
+.ul-inicio {
+  display: flex;
+  margin-right: 35px;
+}
+.nav-inicio a {
+  text-decoration: none;
+  color: black;
+}
+.nav-inicio-li {
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .ul-inicio {
+    flex-direction: column;
+    align-items: center;
+    /*background-color: violet;*/
+    position: fixed;
+    left: 0;
+    top: 132px;
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+  }
+
+  .nav-toggle {
+    display: block;
+    margin-left: 53%;
+  }
+  .nav-inicio-li {
+    padding: 20px 0;
+  }
+}

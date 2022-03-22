@@ -1,0 +1,19 @@
+.foto-perfil {
+  background: url("../../img/foto-perfil.png") no-repeat center / cover;
+  width: 345px;
+  height: 260px;
+}
+
+@media (max-width: 768px) {
+  .foto-perfil {
+    width: 39%;
+    height: 12vh;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .foto-perfil {
+    width: 55%;
+    height: 10vh;
+  }
+}

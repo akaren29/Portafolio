@@ -1,0 +1,43 @@
+.section-inicio,
+#inicio {
+  background: #f5f5f5;
+}
+
+#inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.titulo-inicio {
+  margin: 15px 0;
+  line-height: 50px;
+  font-size: 2rem;
+}
+
+#inicio h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#inicio > p {
+  margin: 25px 0;
+  font-size: 22px;
+}
+
+@media (max-width: 768px) {
+  #inicio .titulo-inicio {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #inicio {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  #inicio h1 {
+    font-size: 1rem;
+    line-height: 26px;
+  }
+}

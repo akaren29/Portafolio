@@ -1,0 +1,23 @@
+.lista-redes {
+  display: flex;
+  margin: 25px 0;
+}
+
+.lista-redes li:first-child {
+  margin-left: 0;
+}
+.lista-redes li {
+  margin-left: 20px;
+}
+.lista-redes li a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #inicio ul li {
+    display: flex;
+    justify-content: center;
+    margin-left: 3px;
+  }
+}
