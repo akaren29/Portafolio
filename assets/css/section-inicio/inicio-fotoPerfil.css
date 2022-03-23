@@ -13,7 +13,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .foto-perfil {
-    width: 40%;
-    height: 8vh;
+    width: 98px;
+    height: 98px;
   }
 }
