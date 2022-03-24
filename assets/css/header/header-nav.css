@@ -32,6 +32,7 @@
     overflow-y: auto;
     left: 100%;
     transition: left 0.3s;
+    z-index: 1000;
   }
 
   .nav-toggle {
