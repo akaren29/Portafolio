@@ -49,4 +49,7 @@
     width: 40%;
     margin-bottom: 6%;
   }
+  .elementos-hobbies > p {
+    font-size: 0.9em;
+  }
 }

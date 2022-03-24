@@ -65,7 +65,6 @@
   }
   .buttons-proyecto #repositorio {
     margin-right: 3%;
-    height: auto;
   }
   .proyecto-informacion-2 {
     margin-right: 60%;
@@ -84,6 +83,7 @@
   }
   .buttons-proyecto button {
     width: auto;
+    height: 2vh;
   }
   .proyecto-informacion-2 {
     margin-right: 18%;

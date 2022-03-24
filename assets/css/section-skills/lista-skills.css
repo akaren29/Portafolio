@@ -49,4 +49,8 @@
     width: 40%;
     margin-bottom: 6%;
   }
+
+  .elementos-skills > p {
+    font-size: 0.9em;
+  }
 }
