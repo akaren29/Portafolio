@@ -23,6 +23,7 @@
     <link href="./assets/css/section-proyectos/lista-proyectos.css" rel="stylesheet" />
     <link href="./assets/css/section-contacto/section-contacto.css" rel="stylesheet" />
     <link href="./assets/css/section-contacto/contacto-formulario.css" rel="stylesheet" />
+    <link href="./assets/css/section-contacto/formulario.css" rel="stylesheet" />
     <link href="./assets/css/footer/footer.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -215,28 +216,54 @@
             <h2 class="titulo-secundario">Contacto</h2>
             <p>¿Quieres contactarme?</p>
             <p>Complete el siguiente formulario y me pondre en contacto con usted lo antes posible.</p>
-            <form action="">
-              <div class="form-inputs">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" class="input-padron" required>
+            
+            <form  id="formulario" action="">
+              <!--Grupo:nombre-->
+              <div class="formulario__grupo form-inputs" id="grupo-nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" id="nombre" name="nombre" class="input-padron formulario__input">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre no debe estar en blanco y contener un máximo de 50 caracteres.</p>
+              </div>
+              <!--Grupo:email-->
+              <div class="formulario__grupo form-inputs" id="grupo-email">
+                <label for="email" class="formulario__label">Email</label>
+                <div class="formulario__grupo-input">
+                  <input type="email" id="email" name="email" class="input-padron formulario__input" placeholder="correo@correo.com">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El campo e-mail no debe estar vacio y contener el formato e-mail.</p>
+              </div>
+              <!--Grupo:telefono-->
+              <div class="formulario__grupo form-inputs" id="grupo-telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" id="telefono" name="telefono" class="input-padron formulario__input">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El campo teléfono no debe contener letras, simbolos o caracteres especiales.</p>
+              </div>
+              <!--Grupo:mensaje-->
+              <div class="formulario__grupo form-inputs" id="grupo-mensaje">
+                <label for="mensaje" class="formulario__label">Mensaje</label>
+                <div class="formulario__grupo-input">
+                  <textarea cols="65" rows="5" id="mensaje" name="mensaje" class="input-padron"></textarea>
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El campo mensaje no debe estar vacio.</p>
+              </div>
+
+              <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i>Por favor rellena el formulario.</p>
+              </div>
+
+              <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <input type="submit" value="Enviar mensaje" class="formulario__btn btn-enviar">
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente.</p>
               </div>
               
-              <div class="form-inputs">
-                <label for="email">Email</label>
-                <input type="email" id="email" class="input-padron" required>
-              </div>
-
-              <div class="form-inputs">
-                <label for="asunto">Asunto</label>
-              <input type="text" id="asunto" class="input-padron" required>
-              </div>
-
-              <div class="form-inputs">
-                <label for="mensaje">Mensaje</label>
-              <textarea cols="65" rows="5" id="mensaje" class="input-padron" required></textarea>
-              </div>
-
-              <input type="submit" value="Enviar mensaje" class="btn-enviar">
             </form>
           </div>
         </div>
@@ -247,6 +274,7 @@
         <p>Desarrollado por Karen Jasso</p>
         <p>2022</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/formulario.js"></script>
 </body>
 </html>
