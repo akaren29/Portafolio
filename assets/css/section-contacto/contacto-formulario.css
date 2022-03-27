@@ -1,6 +1,7 @@
 .contacto-info {
   width: 60%;
   padding: 0 2%;
+  position: relative;
 }
 form {
   margin-top: 3%;
