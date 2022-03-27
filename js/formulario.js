@@ -1,5 +1,6 @@
 const formulario = document.querySelector('#formulario');
 const inputs = document.querySelectorAll('.input-padron');
+const btnirInicio = document.querySelector('#btn-ir_inicio');
 
 
 const expresiones = {
@@ -74,4 +75,9 @@ formulario.addEventListener('submit', (e) => {
             document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo')
          }, 3000);
     }
+})
+
+
+btnirInicio.addEventListener('click', ()=>{
+    window.scrollTo(0, 0)
 })

@@ -2,7 +2,10 @@
 #inicio {
   background: #f5f5f5;
 }
-
+/*.section-inicio {
+  position: relative;
+  z-index: 99;
+}*/
 #inicio {
   display: flex;
   align-items: center;
