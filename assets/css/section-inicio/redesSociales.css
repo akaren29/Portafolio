@@ -18,8 +18,13 @@
   #inicio ul li {
     display: flex;
     justify-content: center;
-    margin-left: 3px;
+    margin-left: 15px;
   }
+
+  #inicio ul li:first-child {
+    margin-left: 0;
+  }
+
   .lista-redes {
     width: 100%;
     justify-content: flex-start;
