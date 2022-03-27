@@ -1,7 +1,12 @@
 .section-contacto {
   background-color: #eaf2fd;
 }
-
+.titulo-contacto {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 3%;
+  text-align: center;
+}
 #contacto {
   display: flex;
 }
@@ -18,5 +23,9 @@
 @media (max-width: 768px) {
   .contacto-imagen {
     display: none;
+    box-sizing: border-box;
+  }
+  .titulo-contacto {
+    text-align: start;
   }
 }

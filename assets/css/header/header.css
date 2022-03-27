@@ -48,5 +48,6 @@ header {
   }
   .section-header h1 {
     margin-left: 5%;
+    font-size: 1.09em;
   }
 }

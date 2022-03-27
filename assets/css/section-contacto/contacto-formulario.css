@@ -35,8 +35,13 @@ form input {
   .contacto-info {
     width: 100%;
   }
-
+  .contacto-info p {
+    font-size: 1.09em;
+  }
   .btn-enviar {
-    height: 3vh;
+    height: 4vh;
+  }
+  form label {
+    font-size: 1.09em;
   }
 }
