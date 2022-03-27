@@ -22,7 +22,7 @@
   }
   .lista-redes {
     width: 100%;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
   .lista-redes li a {
     font-size: 1.3em;
